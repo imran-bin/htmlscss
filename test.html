@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+ 
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">MyWebsite</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+ 
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Our Website</h1>
+            <p>Your journey to success starts here</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+   
+    <main>
+        <div class="container">
+      
+            <section class="content">
+                <h2 id="about">About Us</h2>
+                <p>This is the about section where you can describe your business or website.</p>
+            </section>
+ 
+            <aside class="sidebar">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+ 
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 MyWebsite. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+ 
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html> 
